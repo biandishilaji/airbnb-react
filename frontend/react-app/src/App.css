@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html, body, #root {
+  /* faz o fundo da aplicação ocupar a tela toda */
+  /* min-height: 100%; */
+}
+body {
+  background: #000 url('./assets/background.jpg') no-repeat;
+  background-size: cover;
+  /* cover para cobrir a tela */
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body, input, button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  margin: 80px auto;
+  max-width: 450px;
+  width: 100%;
+  /* max e width para validar se tiver menos de 450px, trabalha em 450, se tiver mais, fica 100% */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex colum faz com que corram em colunas */
+}
+
+.content {
+  width: 100%;
+  background: #FFF;
+  margin-top: 50px;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+/* .content > p estiliza apenas o primeiro <p> */
+.content > p {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 30px;
+} 
+
+.content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content form label {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.content form label span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999
+}
+
+.content form input {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.content button.btn {
+  border: 0px;
+  border-radius: 2px;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #f05a5b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content button.btn:hover {
+  background: #e14f50;
+}
+
+label #thumbnail input {
+  dipslay: none;
+}
+
+.content label.image {
+  margin-bottom: 20px;
+  border: 1px dashed #ddd;
+  background-size: cover;
+  cursor: pointer;
+  height: 160px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content label.image input {
+display: none;
+}
+
+.content label.has-preview {
+  margin-bottom: 20px;
+  border: 0;
+  background-size: cover;
+  cursor: pointer;
+  height: 160px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content label.has-preview input{
+  display: none;
+}
+
+.content label.has-preview img{
+  display: none;
+}
